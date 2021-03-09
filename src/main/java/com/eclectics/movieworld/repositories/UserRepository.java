@@ -5,7 +5,6 @@
  */
 package com.eclectics.movieworld.repositories;
 
-import com.eclectics.movieworld.entities.Movie;
 import com.eclectics.movieworld.entities.User;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
