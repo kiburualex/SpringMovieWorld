@@ -7,6 +7,7 @@ package com.eclectics.movieworld.controllers;
 
 import com.eclectics.movieworld.entities.User;
 import com.eclectics.movieworld.repositories.UserRepository;
+import io.swagger.annotations.Api;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -29,6 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("users")
 @CrossOrigin
+@Api(tags = "Users")
 public class UsersController {
     
     @Autowired

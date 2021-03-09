@@ -7,6 +7,7 @@ package com.eclectics.movieworld.controllers;
 
 import com.eclectics.movieworld.entities.Movie;
 import com.eclectics.movieworld.repositories.MovieRepository;
+import io.swagger.annotations.Api;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -31,16 +32,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("movies")
 @CrossOrigin
+@Api(tags = "Movies")
 public class MoviesController {
     
     @Autowired
     MovieRepository movieRepository;
-    
-    // Available to all users
-    @GetMapping("test/")
-    public String test1(){
-        return "API Test";
-    }
 
     // get all movies
     @GetMapping("/")
