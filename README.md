@@ -41,6 +41,8 @@
   http://localhost:8080/login
   username: admin
   password: admin123
+  copy the token and paste it to the other requests headers:
+  Bearer xxxxxx
 ```
   #### **Swagger Api Url**
  ```
