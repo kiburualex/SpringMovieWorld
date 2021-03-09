@@ -6,7 +6,6 @@
 package com.eclectics.movieworld.repositories;
 
 import com.eclectics.movieworld.entities.Movie;
-import com.eclectics.movieworld.entities.User;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Repository;
  * @author kiburu
  */
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUsername(String username);
-    List<User> findByUsernameContaining(String username);
+public interface MovieRepository extends JpaRepository<Movie, Long> {
+    Movie findByTitle(String title);
+    List<Movie> findByTitleContaining(String title);
 }
